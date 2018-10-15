@@ -1,4 +1,6 @@
 class Triangle
+  class TriangleError < StandardError 
+  end 
   
   attr_accessor :side1, :side2, :side3
   
@@ -19,9 +21,4 @@ class Triangle
         raise Triangle::TriangleError
     end 
   end 
-  
-  class TriangleError < StandardError 
-    
-  end 
-  
 end
