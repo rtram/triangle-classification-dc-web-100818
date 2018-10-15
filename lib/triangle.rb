@@ -18,6 +18,7 @@ class Triangle
     elsif (@side1 == 0 || @side2 == 0 || @side3)
       begin 
         raise TriangleError
+      end 
     end 
   end 
   
