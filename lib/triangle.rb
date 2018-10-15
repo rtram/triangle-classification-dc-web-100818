@@ -13,7 +13,6 @@ class Triangle
   end 
   
   def kind 
-    
     if (@side1 == @side2 && @side2 == @side3)
       :equilateral
     elsif (@side1 == @side2 || @side2 == @side3 || @side1 == @side3)
@@ -21,8 +20,9 @@ class Triangle
     elsif (@side1 != @side2 || @side2 != @side3 || @side1 != @side3)
       :scalene
     else 
-    elsif (@side1 <= 0 || @side2 <= 0 || @side3 <= 0)
-      raise TriangleError
+      binding.pry
+    # elsif (@side1 <= 0 || @side2 <= 0 || @side3 <= 0)
+    #   raise TriangleError
     end 
   end 
 end
